@@ -1,0 +1,5 @@
+numpy>=1.26
+scipy>=1.11
+anndata>=0.10
+torch>=2.1
+pytest>=8

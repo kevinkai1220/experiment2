@@ -1,0 +1,22 @@
+{
+  "data": "data/fish_cancer_raw.h5ad",
+  "coordinates": "data/fish_coordinates.csv",
+  "assume_single_tissue": true,
+  "output": "results/fish",
+  "epochs": 50,
+  "batch_size": 16,
+  "hidden": 64,
+  "neighbors": 16,
+  "graph_mode": "all",
+  "distance_mode": "fixed",
+  "sender_chunk_size": 32,
+  "checkpoint_senders": true,
+  "n_modules": 20,
+  "device": "auto",
+  "sender_ratio": 0.2,
+  "mixture": [0.5, 0.25, 0.25],
+  "validation_ratios": [0.2, 0.4, 0.5, 0.6],
+  "lambda_msg": 0.05,
+  "lambda_adv": 0.01,
+  "shuffle_repeats": 3
+}
