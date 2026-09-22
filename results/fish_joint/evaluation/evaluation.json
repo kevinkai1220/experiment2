@@ -1,0 +1,430 @@
+{
+  "checkpoint_epoch": 17,
+  "validation": {
+    "random_0.2": {
+      "metrics": {
+        "internal_only": {
+          "huber": 0.05086822854781496,
+          "mse": 0.10397167967022329,
+          "mae": 0.17539014986286994
+        },
+        "real_messages": {
+          "huber": 0.050109156010807426,
+          "mse": 0.10229817965756292,
+          "mae": 0.18827758825689123
+        },
+        "shuffled_messages": {
+          "huber": 0.05071844208370084,
+          "mse": 0.10361303064471858,
+          "mae": 0.19122875490511096
+        },
+        "conditional_shuffled_messages": {
+          "huber": 0.050627380121733255,
+          "mse": 0.10341674866998829,
+          "mae": 0.19067376357691299
+        },
+        "shuffled_neighborhoods": {
+          "huber": 0.05073007849132381,
+          "mse": 0.1036366363832916,
+          "mae": 0.19118561043485927
+        },
+        "full_model": {
+          "huber": 0.050109156010807426,
+          "mse": 0.10229817965756292,
+          "mae": 0.18827758825689123
+        }
+      },
+      "moments_masked_positions": {
+        "mean_abs_external_delta": 0.040422771126031876,
+        "std_external_delta": 0.035457365214824677,
+        "variance_internal_hat": 0.18316330015659332,
+        "variance_external_delta": 0.0012572247069329023,
+        "delta_rms_over_target_rms": 0.0807347372174263
+      },
+      "flags": {
+        "full_not_better_than_internal": false,
+        "messages_not_better_than_shuffle": false,
+        "sender_state_not_better_than_conditional_shuffle": false,
+        "external_near_zero": false
+      },
+      "status": "PASS_DIAGNOSTICS_NOT_CAUSAL_PROOF",
+      "n_masked_positions": 69000,
+      "actual_mask_fraction": 0.20000000298023224,
+      "environment_mse": {
+        "internal": 1.147079416072887,
+        "message": 14.927285904815232
+      },
+      "huber_by_tissue": {
+        "single_tissue_assumed": {
+          "internal_only": 0.050868228552997975,
+          "real_messages": 0.0501091560980548,
+          "shuffled_messages": 0.050718442098386045,
+          "conditional_shuffled_messages": 0.0506273800123141,
+          "shuffled_neighborhoods": 0.05073007849535505
+        }
+      },
+      "shuffle_gain_tissue_bootstrap_95ci": null,
+      "uncertainty_note": "Tissue bootstrap is descriptive; one tissue cannot support an independent-tissue CI.",
+      "shuffle_changed_edge_fraction": {
+        "shuffled_messages": [
+          0.9995997331554369,
+          0.999866577718479,
+          0.999866577718479
+        ],
+        "conditional_shuffled_messages": [
+          0.9825216811207471,
+          0.9814546895998298,
+          0.9825216811207471
+        ],
+        "shuffled_neighborhoods": [
+          0.9998696715684853,
+          0.9998642573309743,
+          0.9998588430934633
+        ]
+      },
+      "sender_mask_policy": "fixed across epochs/regimes; no active receiver is another active receiver's sender",
+      "distance_power": 1.0,
+      "neighborhood_null_note": "Complete graph: same sender set, shuffled assignment to distance weights"
+    },
+    "random_0.4": {
+      "metrics": {
+        "internal_only": {
+          "huber": 0.0504912367126216,
+          "mse": 0.10326555266242096,
+          "mae": 0.17416514270201974
+        },
+        "real_messages": {
+          "huber": 0.04978713830657627,
+          "mse": 0.10170119421032892,
+          "mae": 0.18855930053323938
+        },
+        "shuffled_messages": {
+          "huber": 0.050467355293352244,
+          "mse": 0.10315178842014737,
+          "mae": 0.19173757706517758
+        },
+        "conditional_shuffled_messages": {
+          "huber": 0.05037017195696992,
+          "mse": 0.10294624840810103,
+          "mae": 0.1912308398652192
+        },
+        "shuffled_neighborhoods": {
+          "huber": 0.05047546735074785,
+          "mse": 0.10316957920876102,
+          "mae": 0.19169322531925884
+        },
+        "full_model": {
+          "huber": 0.04978713830657627,
+          "mse": 0.10170119421032892,
+          "mae": 0.18855930053323938
+        }
+      },
+      "moments_masked_positions": {
+        "mean_abs_external_delta": 0.04035234823822975,
+        "std_external_delta": 0.03528739884495735,
+        "variance_internal_hat": 0.1834849864244461,
+        "variance_external_delta": 0.0012452006340026855,
+        "delta_rms_over_target_rms": 0.08017653226852417
+      },
+      "flags": {
+        "full_not_better_than_internal": false,
+        "messages_not_better_than_shuffle": false,
+        "sender_state_not_better_than_conditional_shuffle": false,
+        "external_near_zero": false
+      },
+      "status": "PASS_DIAGNOSTICS_NOT_CAUSAL_PROOF",
+      "n_masked_positions": 138000,
+      "actual_mask_fraction": 0.4000000059604645,
+      "environment_mse": {
+        "internal": 1.1477642756225406,
+        "message": 14.927286284902822
+      },
+      "huber_by_tissue": {
+        "single_tissue_assumed": {
+          "internal_only": 0.05049123670225558,
+          "real_messages": 0.04978713818218397,
+          "shuffled_messages": 0.05046735520984816,
+          "conditional_shuffled_messages": 0.05037017199209923,
+          "shuffled_neighborhoods": 0.050475467313890875
+        }
+      },
+      "shuffle_gain_tissue_bootstrap_95ci": null,
+      "uncertainty_note": "Tissue bootstrap is descriptive; one tissue cannot support an independent-tissue CI.",
+      "shuffle_changed_edge_fraction": {
+        "shuffled_messages": [
+          0.9995997331554369,
+          0.999866577718479,
+          0.999866577718479
+        ],
+        "conditional_shuffled_messages": [
+          0.9825216811207471,
+          0.9814546895998298,
+          0.9825216811207471
+        ],
+        "shuffled_neighborhoods": [
+          0.9998696715684853,
+          0.9998642573309743,
+          0.9998588430934633
+        ]
+      },
+      "sender_mask_policy": "fixed across epochs/regimes; no active receiver is another active receiver's sender",
+      "distance_power": 1.0,
+      "neighborhood_null_note": "Complete graph: same sender set, shuffled assignment to distance weights"
+    },
+    "random_0.5": {
+      "metrics": {
+        "internal_only": {
+          "huber": 0.05060398169116698,
+          "mse": 0.10329080313254094,
+          "mae": 0.17468188178020974
+        },
+        "real_messages": {
+          "huber": 0.0499026783708213,
+          "mse": 0.10173464700726495,
+          "mae": 0.18958677793862164
+        },
+        "shuffled_messages": {
+          "huber": 0.05054820393548495,
+          "mse": 0.10310922998898271,
+          "mae": 0.19273617074938787
+        },
+        "conditional_shuffled_messages": {
+          "huber": 0.050440099817543216,
+          "mse": 0.10287885364127045,
+          "mae": 0.19226672294358702
+        },
+        "shuffled_neighborhoods": {
+          "huber": 0.050550648326228784,
+          "mse": 0.1031134433939837,
+          "mae": 0.19268847682049886
+        },
+        "full_model": {
+          "huber": 0.0499026783708213,
+          "mse": 0.10173464700726495,
+          "mae": 0.18958677793862164
+        }
+      },
+      "moments_masked_positions": {
+        "mean_abs_external_delta": 0.04190260171890259,
+        "std_external_delta": 0.03581708297133446,
+        "variance_internal_hat": 0.18718552589416504,
+        "variance_external_delta": 0.0012828634353354573,
+        "delta_rms_over_target_rms": 0.08222239464521408
+      },
+      "flags": {
+        "full_not_better_than_internal": false,
+        "messages_not_better_than_shuffle": false,
+        "sender_state_not_better_than_conditional_shuffle": false,
+        "external_near_zero": false
+      },
+      "status": "PASS_DIAGNOSTICS_NOT_CAUSAL_PROOF",
+      "n_masked_positions": 172500,
+      "actual_mask_fraction": 0.5,
+      "environment_mse": {
+        "internal": 1.14723997997201,
+        "message": 14.92728601815044
+      },
+      "huber_by_tissue": {
+        "single_tissue_assumed": {
+          "internal_only": 0.05060398165799569,
+          "real_messages": 0.049902678413667544,
+          "shuffled_messages": 0.050548203990770424,
+          "conditional_shuffled_messages": 0.05044009969361162,
+          "shuffled_neighborhoods": 0.050550648299968186
+        }
+      },
+      "shuffle_gain_tissue_bootstrap_95ci": null,
+      "uncertainty_note": "Tissue bootstrap is descriptive; one tissue cannot support an independent-tissue CI.",
+      "shuffle_changed_edge_fraction": {
+        "shuffled_messages": [
+          0.9995997331554369,
+          0.999866577718479,
+          0.999866577718479
+        ],
+        "conditional_shuffled_messages": [
+          0.9825216811207471,
+          0.9814546895998298,
+          0.9825216811207471
+        ],
+        "shuffled_neighborhoods": [
+          0.9998696715684853,
+          0.9998642573309743,
+          0.9998588430934633
+        ]
+      },
+      "sender_mask_policy": "fixed across epochs/regimes; no active receiver is another active receiver's sender",
+      "distance_power": 1.0,
+      "neighborhood_null_note": "Complete graph: same sender set, shuffled assignment to distance weights"
+    },
+    "random_0.6": {
+      "metrics": {
+        "internal_only": {
+          "huber": 0.05136956884780368,
+          "mse": 0.10499377927918364,
+          "mae": 0.1772076222608631
+        },
+        "real_messages": {
+          "huber": 0.05031961714703104,
+          "mse": 0.1027263510423006,
+          "mae": 0.19042651030867572
+        },
+        "shuffled_messages": {
+          "huber": 0.05104489492487024,
+          "mse": 0.10427550838458173,
+          "mae": 0.19397843770934764
+        },
+        "conditional_shuffled_messages": {
+          "huber": 0.05093087034870461,
+          "mse": 0.10403260338210445,
+          "mae": 0.19358902158445399
+        },
+        "shuffled_neighborhoods": {
+          "huber": 0.05105011990143289,
+          "mse": 0.10428713907558176,
+          "mae": 0.19395737894337725
+        },
+        "full_model": {
+          "huber": 0.05031961714703104,
+          "mse": 0.1027263510423006,
+          "mae": 0.19042651030867572
+        }
+      },
+      "moments_masked_positions": {
+        "mean_abs_external_delta": 0.04704029858112335,
+        "std_external_delta": 0.03893723338842392,
+        "variance_internal_hat": 0.18980811536312103,
+        "variance_external_delta": 0.0015161082847043872,
+        "delta_rms_over_target_rms": 0.09005410224199295
+      },
+      "flags": {
+        "full_not_better_than_internal": false,
+        "messages_not_better_than_shuffle": false,
+        "sender_state_not_better_than_conditional_shuffle": false,
+        "external_near_zero": false
+      },
+      "status": "PASS_DIAGNOSTICS_NOT_CAUSAL_PROOF",
+      "n_masked_positions": 207000,
+      "actual_mask_fraction": 0.6000000238418579,
+      "environment_mse": {
+        "internal": 1.1489267650289812,
+        "message": 14.927286232381627
+      },
+      "huber_by_tissue": {
+        "single_tissue_assumed": {
+          "internal_only": 0.05136956879251821,
+          "real_messages": 0.0503196170664064,
+          "shuffled_messages": 0.05104489499397708,
+          "conditional_shuffled_messages": 0.05093087039938295,
+          "shuffled_neighborhoods": 0.051050119953646944
+        }
+      },
+      "shuffle_gain_tissue_bootstrap_95ci": null,
+      "uncertainty_note": "Tissue bootstrap is descriptive; one tissue cannot support an independent-tissue CI.",
+      "shuffle_changed_edge_fraction": {
+        "shuffled_messages": [
+          0.9995997331554369,
+          0.999866577718479,
+          0.999866577718479
+        ],
+        "conditional_shuffled_messages": [
+          0.9825216811207471,
+          0.9814546895998298,
+          0.9825216811207471
+        ],
+        "shuffled_neighborhoods": [
+          0.9998696715684853,
+          0.9998642573309743,
+          0.9998588430934633
+        ]
+      },
+      "sender_mask_policy": "fixed across epochs/regimes; no active receiver is another active receiver's sender",
+      "distance_power": 1.0,
+      "neighborhood_null_note": "Complete graph: same sender set, shuffled assignment to distance weights"
+    },
+    "module": {
+      "metrics": {
+        "internal_only": {
+          "huber": 0.07170229961289683,
+          "mse": 0.14776288139408456,
+          "mae": 0.23726587612796804
+        },
+        "real_messages": {
+          "huber": 0.06543205778226274,
+          "mse": 0.13474090032129765,
+          "mae": 0.2083096104633335
+        },
+        "shuffled_messages": {
+          "huber": 0.06860206949170888,
+          "mse": 0.14181420692593466,
+          "mae": 0.21467314196822448
+        },
+        "conditional_shuffled_messages": {
+          "huber": 0.06806141714106541,
+          "mse": 0.14058980078834718,
+          "mae": 0.2139554705692124
+        },
+        "shuffled_neighborhoods": {
+          "huber": 0.06864402886516997,
+          "mse": 0.14191104963887752,
+          "mae": 0.21475129638759125
+        },
+        "full_model": {
+          "huber": 0.06543205778226274,
+          "mse": 0.13474090032129765,
+          "mae": 0.2083096104633335
+        }
+      },
+      "moments_masked_positions": {
+        "mean_abs_external_delta": 0.0974946841597557,
+        "std_external_delta": 0.08263493329286575,
+        "variance_internal_hat": 0.20144133269786835,
+        "variance_external_delta": 0.006828531622886658,
+        "delta_rms_over_target_rms": 0.1699932962656021
+      },
+      "flags": {
+        "full_not_better_than_internal": false,
+        "messages_not_better_than_shuffle": false,
+        "sender_state_not_better_than_conditional_shuffle": false,
+        "external_near_zero": false
+      },
+      "status": "PASS_DIAGNOSTICS_NOT_CAUSAL_PROOF",
+      "n_masked_positions": 313398,
+      "actual_mask_fraction": 0.9084000406057938,
+      "environment_mse": {
+        "internal": 1.158701346901016,
+        "message": 14.927286012621893
+      },
+      "huber_by_tissue": {
+        "single_tissue_assumed": {
+          "internal_only": 0.07170229945466014,
+          "real_messages": 0.06543205791006931,
+          "shuffled_messages": 0.06860206942577693,
+          "conditional_shuffled_messages": 0.06806141718366761,
+          "shuffled_neighborhoods": 0.06864402890168614
+        }
+      },
+      "shuffle_gain_tissue_bootstrap_95ci": null,
+      "uncertainty_note": "Tissue bootstrap is descriptive; one tissue cannot support an independent-tissue CI.",
+      "shuffle_changed_edge_fraction": {
+        "shuffled_messages": [
+          0.9995997331554369,
+          0.999866577718479,
+          0.999866577718479
+        ],
+        "conditional_shuffled_messages": [
+          0.9825216811207471,
+          0.9814546895998298,
+          0.9825216811207471
+        ],
+        "shuffled_neighborhoods": [
+          0.9998696715684853,
+          0.9998642573309743,
+          0.9998588430934633
+        ]
+      },
+      "sender_mask_policy": "fixed across epochs/regimes; no active receiver is another active receiver's sender",
+      "distance_power": 1.0,
+      "neighborhood_null_note": "Complete graph: same sender set, shuffled assignment to distance weights"
+    }
+  }
+}
