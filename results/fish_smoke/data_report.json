@@ -1,0 +1,31 @@
+{
+  "definition": "obs['perturbation'] == 'Control'; missing/unknown labels excluded",
+  "total_cells": 7496,
+  "genes": 500,
+  "eligible_receivers": 3452,
+  "train_receivers": 2762,
+  "validation_receivers": 690,
+  "known_perturbed_senders": 4044,
+  "unknown_label_senders": 0,
+  "all_sender_cells": 7496,
+  "type_names": [
+    "cancer"
+  ],
+  "tissues": [
+    "single_tissue_assumed"
+  ],
+  "isolated_cells": 0,
+  "eligible_by_type": {
+    "cancer": 3452
+  },
+  "eligible_by_tissue": {
+    "single_tissue_assumed": 3452
+  },
+  "evaluation_scope": "within-tissue receiver holdout; not generalization",
+  "training_sender_policy": "all expression of validation receivers masked during training",
+  "device": "cpu",
+  "torch_version": "2.14.0+cu130",
+  "graph_mode": "knn",
+  "distance_mode": "fixed",
+  "environment_weight_policy": "fixed at initial distance_power; auxiliary targets do not drift"
+}
